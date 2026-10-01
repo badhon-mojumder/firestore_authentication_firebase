@@ -12,7 +12,20 @@
           "package_name": "com.example.live_score_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "105485361225-pf152en4r71p4lnnd7796thfds2r2t28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.live_score_app",
+            "certificate_hash": "4ab253ab3bd1b48490ab0d4be15c2e5291085bdd"
+          }
+        },
+        {
+          "client_id": "105485361225-obmclvgp0gp0kocfgtssvhif19sbkj0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC7-s_08DS26sj8Dg-sp5FOy719j7Esv_o"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105485361225-obmclvgp0gp0kocfgtssvhif19sbkj0t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "105485361225-9mu5ooaf1en7vfb0pv88n6pi1oj72je4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.liveScoreApp"
+              }
+            }
+          ]
         }
       }
     }

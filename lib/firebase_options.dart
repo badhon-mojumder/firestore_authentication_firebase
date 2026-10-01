@@ -56,13 +56,14 @@ class DefaultFirebaseOptions {
     projectId: 'live-score-app-d5e22',
     storageBucket: 'live-score-app-d5e22.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyB89UMWyStnqDALaBPS-VFt5V53UTG6XsU',
     appId: '1:105485361225:ios:bbb75c71e4957678749f98',
     messagingSenderId: '105485361225',
     projectId: 'live-score-app-d5e22',
     storageBucket: 'live-score-app-d5e22.firebasestorage.app',
+    androidClientId: '105485361225-pf152en4r71p4lnnd7796thfds2r2t28.apps.googleusercontent.com',
+    iosClientId: '105485361225-9mu5ooaf1en7vfb0pv88n6pi1oj72je4.apps.googleusercontent.com',
     iosBundleId: 'com.example.liveScoreApp',
   );
 }
