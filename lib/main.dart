@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:live_score_app/authentication/auth_gate.dart';
+import 'package:live_score_app/firestore_add_set_get/write_data_screen.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const AuthGate(),
+      home: const WriteDataScreen(),
     );
   }
 }
