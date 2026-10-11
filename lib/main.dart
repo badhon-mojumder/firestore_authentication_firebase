@@ -4,9 +4,11 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:live_score_app/authentication/auth_gate.dart';
 import 'package:live_score_app/firestore_crud/screen/notes_screen.dart';
 import 'package:live_score_app/local_notification/screen/notification_lab_screen.dart';
+import 'package:live_score_app/push_notification/screen/push_lab_screen.dart';
 import 'firebase_options.dart';
 import 'local_notification/screen/app_navigator.dart';
 import 'local_notification/service/notification_service.dart';
+import 'push_notification/service/push_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +24,7 @@ Future<void> main() async {
   }
 
   await NotificationService.init();
+  await PushService.init();
 
   runApp(const MyApp());
 }
@@ -35,7 +38,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const NotificationLabScreen(),
+      home: const PushLabScreen(),
       navigatorKey: AppNavigator.key,
     );
   }
